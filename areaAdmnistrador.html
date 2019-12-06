@@ -1,0 +1,237 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/styles.css"  media="screen,projection"/>  
+      <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap" rel="stylesheet"> 
+      <link type="text/css" rel="stylesheet" href="css/adm.css"  media="screen,projection"/>  
+      <!--Let browser know website is optimized for mobile-->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="UTF-8" /> 
+      <title>Sistema de Gestão Agricola</title>
+      <style>#map{ height: 50vh }</style>
+    </head>
+
+    <body>
+
+
+    <nav class="navbar">
+      <div class="white nav-wrapper">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons colorblack">menu</i></a>
+        <div class="centralize">
+          <ul id="nav-mobile" class="links right hide-on-med-and-down">
+          <li><img class="pulse padding" src="img/logo.png"/></li>
+          <li><a href="main.html">HOME</a></li>
+          <li><a href="sobre.html">SOBRE NÓS</a></li>
+          <li><a id="lula" href="areaAdmnistrador.html">ACESSAR PORTAL</a></li>
+          <li><a href="main.html">Sair</a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="main.html">HOME</a></li>
+      <li><a href="sobre.html">SOBRE NÓS</a></li>
+      <li><a id="livre" href="areaAdmnistrador.html">ACESSAR PORTAL</a></li>
+      <li><a href="main.html">Sair</a><
+    </ul>
+
+
+    <div class="secao">
+      <h1><i class="material-icons light-green darken-1">chevron_right</i> Controle de áreas</h1>
+      <div class="backup">
+        <a class="waves-effect waves-light btn light-green darken-1 btn-large" style="left: 0">
+          Realizar Backup<i class="material-icons left">cloud</i>
+       </a>
+      </div> 
+       <div id="map"></div>
+       <div class="indicadores">
+         <div class="saudavel"></div>
+         <p>Área saudavel &nbsp;</p>
+         <div class="problematica"></div>
+         <p>Área problematica &nbsp;</p>
+         <div class="fertilizante"></div>
+         </p>Necessita Fertilizante &nbsp;</p>
+       </div>   
+    </div>
+
+    <div class="secao">
+      <h1><i class="material-icons light-green darken-1">chevron_right</i> Controle de fornecedores</h1>
+        <div class="main">
+          <div class="left">
+            <div class="row">
+            <form class="col s6">
+              <div class="row">
+                <div class="input-field">
+                  <textarea id="icon_prefix2" placeholder="CNPJ" class="materialize-textarea"></textarea>
+                  <a class="waves-effect waves-light btn light-green darken-1 btn-large" style="font-size: 10px">
+                  Verificar Fornecedor</a>  
+                  </div>
+                <div class="input-field">
+                  <textarea id="icon_prefix2" placeholder="CNPJ" class="materialize-textarea"></textarea>
+                  <a class="waves-effect waves-light btn light-green darken-1 btn-large" style="font-size: 10px">
+                    Remover Fornecedor
+                  </a>  
+                </div>
+                <div class="input-field">
+                  <textarea id="icon_prefix2" placeholder="CNPJ" class="materialize-textarea"></textarea>
+                  <textarea id="icon_prefix2" placeholder="Dados" class="materialize-textarea"></textarea>
+                  <a class="waves-effect waves-light btn light-green darken-1 btn-large" style="font-size: 10px">
+                    Atualizar Fornecedor
+                  </a>  
+                </div>
+              </div>
+            </form>
+          </div>
+          </div>
+          <div class="rightt">
+            <form class="col s6">
+              <div class="row">
+                <div class="input-field">
+                    <textarea id="icon_prefix2" placeholder="NOME" class="materialize-textarea"></textarea>
+                </div>  
+                <div class="input-field">
+                    <textarea id="icon_prefix2" placeholder="Telefone" class="materialize-textarea"></textarea>
+                </div>
+                <div class="input-field">
+                  <textarea id="icon_prefix2" placeholder="Endereco" class="materialize-textarea"></textarea>
+                </div>
+                <div class="input-field">
+                  <textarea id="icon_prefix2" placeholder="CNPJ" class="materialize-textarea"></textarea>
+                </div>
+                <div class="input-field">
+                  <textarea id="icon_prefix2" placeholder="Segmento de Negócio" class="materialize-textarea"></textarea>
+                </div>
+                <a class="waves-effect waves-light btn light-green darken-1 btn-large" style="font-size: 10px">
+                    Cadastrar Fornecedor
+                </a>      
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+
+    <div class="secao">
+      <h1><i class="material-icons light-green darken-1">chevron_right</i> Controle de Produtos</h1>
+        <div class="main">
+          <div class="left">
+            <div class="row">
+            <form class="col s6">
+              <div class="row">
+                <div class="input-field">
+                  <textarea id="icon_prefix2" placeholder="Unidade" class="materialize-textarea"></textarea>
+                  <a class="waves-effect waves-light btn light-green darken-1 btn-large" style="font-size: 10px">
+                  Consultar Produto</a>  
+                  </div>
+                <div class="input-field">
+                  <textarea id="icon_prefix2" placeholder="Unidade" class="materialize-textarea"></textarea>
+                  <a class="waves-effect waves-light btn light-green darken-1 btn-large" style="font-size: 10px">
+                    Remover Produto
+                  </a>  
+                </div>
+                <div class="input-field">
+                  <textarea id="icon_prefix2" placeholder="Unidade" class="materialize-textarea"></textarea>
+                  <textarea id="icon_prefix2" placeholder="Quantidade" class="materialize-textarea"></textarea>
+                  <a class="waves-effect waves-light btn light-green darken-1 btn-large" style="font-size: 10px">
+                    Atualizar Produto
+                  </a>  
+                </div>
+              </div>
+            </form>
+          </div>
+          </div>
+          <div class="rightt">
+            <form class="col s6">
+              <div class="row">
+                <div class="input-field">
+                    <textarea id="icon_prefix2" placeholder="NOME" class="materialize-textarea"></textarea>
+                </div>  
+                <div class="input-field">
+                    <textarea id="icon_prefix2" placeholder="Quantidade" class="materialize-textarea"></textarea>
+                </div>
+                <div class="input-field">
+                  <textarea id="icon_prefix2" placeholder="Unidade" class="materialize-textarea"></textarea>
+                </div>
+                <a class="waves-effect waves-light btn light-green darken-1 btn-large" style="font-size: 10px">
+                    Cadastrar Produto
+                </a>      
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+
+    <div class="secao">
+      <h1><i class="material-icons light-green darken-1">chevron_right</i> Extração de relatórios de área</h1>
+        <div class="main">
+          <div class="left">
+            <div class="row">
+            <form class="col s6">
+              <div class="row">
+                <div class="input-field">
+                  <textarea id="icon_prefix2" placeholder="Altura" class="materialize-textarea"></textarea>
+                <div class="input-field">
+                  <textarea id="icon_prefix2" placeholder="Largura" class="materialize-textarea"></textarea>
+                </div>
+                <div class="input-field">
+                  <textarea id="icon_prefix2" placeholder="Data de Cadastro" class="materialize-textarea"></textarea>
+                  <a class="waves-effect waves-light btn light-green darken-1 btn-large" style="font-size: 10px">
+                    Extrair Relatório
+                  </a>  
+                </div>
+              </div>
+            </form>
+          </div>
+          </div>
+          <div class="rightt">
+          </div>
+        </div>
+    </div>
+   
+
+    <nav class="navbar foot">
+      <div class="white nav-wrapper">
+        <div class="centralize">
+          <ul id="nav-mobile" class="links right hide-on-med-and-down">
+          <li><a href="#">© 2019 Group 3. All Rights Reserved.</a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+          });
+
+          // initialize the map
+            var map = L.map('map').setView([42.35, -71.08], 13);
+            // -25.511869, -49.757608
+
+            // load a tile layer
+            L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
+              {
+                attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+                maxZoom: 17,
+                minZoom: 9
+              }).addTo(map);
+
+        </script>
+        <script>
+          document.querySelector("#lula").innerHTML = `Bem vindo(a) ${localStorage.getItem('nome')}`
+          document.querySelector("#livre").innerHTML = `Bem vindo(a) ${localStorage.getItem('nome')}`
+        </script>
+    </body>
+  </html>
+

@@ -1,0 +1,128 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/styles.css"  media="screen,projection"/>  
+      <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap" rel="stylesheet"> 
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="UTF-8" /> 
+      <title>Sistema de Gestão Agricola</title>
+    </head>
+
+    <body>
+
+
+    <nav class="navbar">
+      <div class="white nav-wrapper">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons colorblack">menu</i></a>
+        <div class="centralize">
+          <ul id="nav-mobile" class="links right hide-on-med-and-down">
+          <li><img class="pulse padding" src="img/logo.png"/></li>
+          <li><a href="main.html">HOME</a></li>
+          <li><a href="sobre.html">SOBRE NÓS</a></li>
+          <li><a href="telaLogin.html">ACESSAR PORTAL</a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="main.html">HOME</a></li>
+      <li><a href="sobre.html">SOBRE NÓS</a></li>
+      <li><a href="telaLogin.html">ACESSAR PORTAL</a></li>
+    </ul>
+
+    <div class="dark-content">
+      <div class="secao1">
+          <div class="title-section">
+            <h1>Ferramentas<br/>
+              De<br/>
+              Gestão Agrícola
+            </h1>
+          </div>
+      </div>
+    </div>
+
+    <div class="secao2">
+      <img class="responsive-img drone" src="img/drone.png"/>
+        <div class="secaoInterna">
+          <h1>Soluções<br/> 
+              Digitais
+          <h1>
+          <p>Utilização de Drones para maior controle
+            <br/>de campo.
+          </p> 
+           <a href="sobre.html" class="waves-effect waves-light btn light-green darken-1 btn-large">CONHECER</a>
+      </div>
+    </div>
+
+    <div class="secao3">
+      <div class="title-section3">
+        <h1 class="controle">Controle De Fornecedores</h1>
+      </div>  
+    </div>
+
+    <div class="secao4">
+      <canvas id="bar-chart" class="chart-container grafico" style="height:50vh; width:40vw"></canvas>
+        <div class="secaoInterna">
+          <h1>Crescimento
+          <h1>
+          <p>
+            Gráfico demonstra<br/>
+            crescimento de produtividade<br/>
+            de campo agrícola analisado<br/>
+            com auxílio de drones.<br/>
+            de campo.
+          </p> 
+           <a href="sobre.html" class="waves-effect waves-light btn light-green darken-1 btn-large">CONHECER</a>
+      </div>
+    </div>
+
+    <nav class="navbar foot">
+      <div class="white nav-wrapper">
+        <div class="centralize">
+          <ul id="nav-mobile" class="links right hide-on-med-and-down">
+          <li><a href="#">© 2019 Group 3. All Rights Reserved.</a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+          });
+
+        </script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+        <script>
+              new Chart(document.getElementById("bar-chart"), {
+              type: 'bar',
+              data: {
+                labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio"],
+                datasets: [
+                  {
+                    label: "Crescimento (Hectare)",
+                    backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+                    data: [2478,5267,5454,3222,4444]
+                  }
+                ]
+              },
+              options: {
+                responsive:false,
+                maintainAspectRatio:false,
+                onResize:1
+              }
+          });
+        </script>
+    </body>
+  </html>
+

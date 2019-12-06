@@ -1,0 +1,227 @@
+
+
+.centralize{
+	display: flex;
+	justify-content:center;
+	align-content:center;
+	text-align: center;
+	align-items:center;
+	height:120px;
+}
+
+.navbar{
+	height:120px;
+}
+
+.padding{
+	margin-right: 20px;
+	cursor:pointer;
+}
+
+.links li a{
+	color:#424242;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+}
+
+.links li a:hover{
+	background-color:white;
+	border-bottom:solid black 1px;
+}
+
+.colorblack{
+	color:black;
+}
+
+.secao1{
+  background-image: url("../img/secao1.jpg");
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.dark-content{
+	height: 700px;
+	max-width: 100%;
+	background-color: black;
+}
+
+.title-section{
+	display: flex;
+	justify-content:center;
+	align-content:center;
+	align-items:center;
+	height: 700px;
+	text-align: center;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 0px 2px 8px #000000;
+}
+
+.title-section3{
+	display: flex;
+	justify-content:center;
+	align-content:center;
+	align-items:center;
+	height: 300px;
+	text-align: center;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 0px 2px 8px #000000;
+}
+
+.secao2{
+	margin-top: 1%;
+	display: flex;
+	justify-content:center;
+	align-content:center;
+
+}
+
+.secao4{
+	margin-top: 2%;
+	display: flex;
+	justify-content:center;
+	align-content:center;
+	flex-direction:row;
+	align-items:center;
+}
+
+.secaoInterna{
+	max-width: 100%;
+	height: 200px
+	display:flex;
+	flex-direction:column;
+}
+
+.secaoInterna h1{
+	font-size: 40px;
+	font-weight: 500;
+	font-family: 'Raleway', sans-serif;
+}
+
+.secaoInterna p{
+	line-height: 20px;
+	font-size: 20px;
+	font-weight: 500;
+	color: rgba(141, 141, 141, 255);
+	font-family: 'Raleway', sans-serif;
+}
+
+.drone{
+	margin-right: 100px;
+	width:400px;
+	height:300px!important;
+
+}
+.grafico{
+	margin-right: 5%;
+	height:50vh; 
+	width:40vw;
+}
+
+.secao3{
+	background-image: url("../img/secao3.jpg");
+	height: 300px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.9;
+}
+
+.secao3sobre{
+	background-image: url("../img/sobre.jpg");
+	height: 200px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.9;
+}
+
+.title-section3sobre{
+	display: flex;
+	justify-content:center;
+	align-content:center;
+	align-items:center;
+	height: 200px;
+	text-align: center;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 0px 2px 8px #000000;
+}
+
+.sobreText{
+	display:flex;
+	justify-content: center;
+	text-align: left;
+	margin-left: 2%;
+	flex-direction: column;
+}
+
+.sobreText h1{
+	font-family: 'Raleway', sans-serif;
+	font-size: 40px;
+	font-weight: 600;
+	line-height:0px;
+}
+	
+
+.footSobre{
+	position: absolute;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	text-align: center;
+}
+
+.contentlogin{
+	width: 400px;
+	height: 400px;
+	box-shadow: 0 0 10px 0 rgba(120,135,182,.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: white;
+}
+
+.secaologin{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	background-image: url("../img/login.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.9;
+	height: 475px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.secao2{
+		flex-direction:column;
+	}
+
+	.secaoInterna{
+		margin-left: 10%;
+	}
+
+	.secao4{
+		flex-direction:column;
+	}
+
+	.controle{
+		font-size: 4.0rem;
+	}
+
+}
+

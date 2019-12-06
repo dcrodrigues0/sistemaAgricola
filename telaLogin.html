@@ -1,0 +1,89 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/styles.css"  media="screen,projection"/>  
+      <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap" rel="stylesheet"> 
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="UTF-8" /> 
+      <title>Sistema de Gestão Agricola</title>
+    </head>
+
+    <body>
+
+
+    <nav class="navbar">
+      <div class="white nav-wrapper">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons colorblack">menu</i></a>
+        <div class="centralize">
+          <ul id="nav-mobile" class="links right hide-on-med-and-down">
+          <li><img class="pulse padding" src="img/logo.png"/></li>
+          <li><a href="main.html">HOME</a></li>
+          <li><a href="sobre.html">SOBRE NÓS</a></li>
+          <li><a href="telaLogin.html">ACESSAR PORTAL</a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="main.html">HOME</a></li>
+      <li><a href="sobre.html">SOBRE NÓS</a></li>
+      <li><a href="telaLogin.html">ACESSAR PORTAL</a></li>
+    </ul>
+
+
+    <div class="secaologin">
+      <div class="contentlogin">
+         <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="username" type="text" class="validate">
+                <label for="username">Login</label>
+              </div>
+              <div class="input-field col s12">
+                <i class="material-icons prefix">lock</i>
+                <input id="password" type="password" class="validate">
+                <label for="password">Senha</label>
+              </div>
+            </div>
+            <a id="btnLogar" class="waves-effect waves-light btn light-green darken-1">Realizar Acesso</a>
+            <a class="waves-effect waves-light btn grey">Esqueci minha Senha</a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+   
+
+    <nav class="navbar foot">
+      <div class="white nav-wrapper">
+        <div class="centralize">
+          <ul id="nav-mobile" class="links right hide-on-med-and-down">
+          <li><a href="#">© 2019 Group 3. All Rights Reserved.</a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="js/index.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+          });
+
+        </script>
+    </body>
+  </html>
+
